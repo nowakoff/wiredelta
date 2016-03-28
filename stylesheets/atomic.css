@@ -1,0 +1,163 @@
+/*overwritting*/
+a{
+	text-decoration: none;
+}
+li,ol {
+	list-style-type: none;
+}
+/*margins*************************************/
+m-auto{
+	margin: 0 auto;
+}
+mss{
+	margin:0.1em;
+}
+ms{
+	margin:0.5em;
+}
+mms{
+	margin:0.8em;
+}
+mm{
+	margin:1em;
+}
+mmm{
+	margin:2em;
+}
+mml{
+	margin:2.5em;
+}
+ml{
+	margin:3em;
+}
+msl{
+	margin:4em;
+}
+/*paddings*****************************************/
+pes{
+	padding:0.1em;
+}
+ps{
+	padding:0.5em;
+}
+pms{
+	padding:0.8em;
+}
+pm{
+	padding:1em;
+}
+pem{
+	padding:2em;
+}
+pml{
+	padding:2.5em;
+}
+pl{
+	padding:3em;
+}
+pel{
+	padding:4em;
+}
+/*border**********************************************/
+sketch{
+	border: 1px solid red;
+}
+br100{
+	border-radius: 100%
+}
+br50{
+	border-radius: 50%
+}
+br30{
+	border-radius: 30%
+}
+/*float***********************************************/
+right{
+	float: right;
+}
+left{
+	float: left;
+}
+clear{
+	clear:both;
+}
+/*z-index**********************************************/
+z-2{
+	z-index: -2
+}
+z-1{
+	z-index: -1
+}
+z0{
+	z-index: 0
+}
+z1{
+	z-index: 1
+}
+z2{
+	z-index: 2
+}
+z3{
+	z-index: 3
+}
+z4{
+	z-index: 4
+}
+z5{
+	z-index: 5
+}
+/*position**********************************************/
+pos-r{
+	position:relative;
+}
+pos-a{
+	position:absolute;
+}
+pos-f{
+	position:fixed;
+}
+pos-s{
+	position:static;
+}
+/*display**********************************************/
+dis-n{
+	display: none
+}
+dis-i{
+	display: inline;
+}
+dis-ib{
+	display: inline-block;
+}
+dis-b{
+	display: block
+}
+/*opacity**********************************************/
+op-s{
+	opacity: 0.3
+}
+op-m{
+	opacity: 0.5
+}
+op-l{
+	opacity: 0.7
+}
+op-el{
+	opacity: 0.9
+}
+/*fixed positioning**********************************************/
+top{
+	top: 0
+}
+left{
+	left: 0
+}
+bottom{
+	bottom: 0
+}
+right{
+	right: 0
+}
+/*display**********************************************/
+/*display**********************************************/
+/*display**********************************************/

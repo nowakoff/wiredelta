@@ -1,0 +1,389 @@
+@font-face {
+    font-family: alpaca;
+    src: url(./fonts/AlpacaScarlettDemo.ttf);
+}
+@font-face {
+    font-family: woodcutter;
+    src: url(./fonts/WoodcutterRocks.ttf);
+}
+
+h3 {
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{ 
+  text-decoration: none 
+}
+
+body{
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .section{
+  text-align: center;
+  position: relative;
+  padding: 2em 0;
+  width: 100%;
+  }
+  /*header for mobile***************/
+  header{
+    margin: 0;
+  }
+  .headerUl{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .break{
+    display: none
+  }
+  .headerLink{
+    display: block;
+    padding: 0.2em;
+  }
+  /*home area************** */
+  .title{
+    font-size: 5em;
+    padding-top: 2em;
+  }
+  .subTitle{
+    font-size: 2em;
+  }
+  .headerLink:hover{
+  background-color: #631D1D;
+  color: white;
+  }
+  .taskArea{
+    width: 80%;
+    padding: 2em 0 5em 0;
+    background-color:  rgba(0, 0, 0, 0.66);
+    margin: 0 auto;
+    border-radius: 4em;
+    color:white;
+  }
+  .taskArea h3{
+    margin: 0;
+    padding: 2em 0;
+    font-family: alpaca;
+    font-size: 2em;
+  }
+  .taskInput {
+    color: #3B833B;
+    font-family: alpaca;
+    text-align: center;
+    margin: 0;
+    border-radius: 0.5em;
+    width: 6em;
+    height: 1.5em;
+    margin: 1em;
+    display: table-cell;
+    text-transform: uppercase;
+  }
+  .taskLabel{
+    display: table-cell;
+    font-family: alpaca;
+    text-transform: uppercase;
+  }
+  .submitButton{
+    background-color: transparent;
+    font-family: alpaca !important;
+    color: inherit;
+    font: inherit;
+    margin: 0.5em;
+    margin-top:2.3em;
+    border-radius: 1em;
+    position: absolute;
+  }
+  .submitButton:hover{
+    background-color: rgba(0, 0, 0, 0.48);
+    color: white;
+  }
+  .taskForm{
+    display: table;
+    margin: 0 auto;
+  }
+  .row{
+    display: table-row;
+    position: relative;
+  }
+  .subTitle{
+    padding-bottom: 2em
+  }
+  .appended {
+    color: #A2E69D;
+    font-family: alpaca;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 1em;
+    margin:0;
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.59);
+  }
+  .error{
+    color: rgb(158, 16, 16);
+    font-size: 1.1em;
+    padding: 0.3em;
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.40);
+
+  }
+}
+@media only screen and (min-width: 500px) {
+  .section{
+    padding: 5em 0;
+  }
+  /*header for desktop *******************/
+  header{
+    top: 100px;
+  }
+  .title{
+    font-size: 16em;
+    padding-top: 0.9em;
+  }
+  .subTitle{
+    font-size: 2em;
+  }
+  .aboutText{
+    font-size: 4em;
+  }
+  .break{
+    font-size: 1.2em;
+    color:rgba(99, 29, 29, 0.55);
+  }
+  .headerLink:hover{
+    color: #631D1D;
+  }
+  .headerLink{
+    padding: 1% 1% 1% 1%;
+    display: inline-block;
+  }
+  /*area with tasks ****************/
+  .taskArea{
+    width: 80%;
+    padding: 10em 0;
+    background-color:  rgba(0, 0, 0, 0.66);
+    margin: 0 auto;
+    border-radius: 4em;
+    color:white;
+  }
+  .taskArea h3{
+    margin: 0;
+    padding: 4em 0;
+    font-family: alpaca;
+    font-size: 2em;
+  }
+  /*task form *******************/
+  .taskInput {
+    color: #3B833B;
+    font-family: alpaca;
+    text-align: center;
+    margin: 0;
+    border-radius: 0.5em;
+    width: 10em;
+    height: 2.5em;
+    margin: 1em;
+    display: table-cell;
+    text-transform: uppercase;
+  }
+  .taskLabel{
+    display: table-cell;
+    font-family: alpaca;
+    text-transform: uppercase;
+  }
+  .submitButton{
+    background-color: transparent;
+    font-family: alpaca !important;
+    color: inherit;
+    font: inherit;
+    margin: 0.5em;
+    border-radius: 1em;
+    width: 10em;
+    height: 3.5em !important;
+    margin: 2em;
+    position: absolute;
+  }
+  .submitButton:hover{
+    background-color: rgba(0, 0, 0, 0.48);
+    color: white;
+  }
+  .taskForm{
+    display: table;
+    margin: 0 auto;
+  }
+  .row{
+    display: table-row;
+    position: relative;
+  }
+  .subTitle{
+  padding-bottom: 6em
+  }
+  /*input messges ***********************/
+  .appended {
+    color: #A2E69D;
+    font-family: alpaca;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 1em;
+    margin:0;
+    margin-top: 4em;
+    background-color: rgba(0, 0, 0, 0.59);
+  }
+  .error{
+    color: rgb(158, 16, 16);
+    font-size: 1.1em;
+    padding: 0.3em;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+.section{
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+
+
+/*header***********************/
+
+header{    
+  text-align: center;
+  color: white;
+  font-family: alpaca;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(158, 8, 8, 0.81);
+}
+
+.title{
+  font-family: woodcutter ;
+  color: green;
+}
+
+.subTitle{
+  font-family: alpaca;
+  color: green;
+}
+
+.social{
+  color: green;
+
+}
+
+.social:hover{
+  color: grey;
+  opacity: 0.5em;
+}
+
+.socialList{
+  display: inline-block;
+  width:3em;
+} 
+
+/*section backgrounds **********************/
+.wood{
+	width:100%;
+  display: block;
+  position: relative;
+
+}
+.green{
+	width:100%;
+  display: block;
+  position: relative;
+
+}
+.grass{
+	width:100%;
+  display: block;
+  position: relative;
+
+}
+.brick{
+	width:100%;
+  display: block;
+  position: relative;
+
+}
+.leaf{
+  width:100%;
+  display: block;
+  position: relative;
+
+}
+.wood::after{
+	content: "";
+  background-size: 100% 100%;
+  background: url(../imgs/wood.jpg);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+
+}
+.green::after{
+	content: "";
+  background: url(../imgs/green.jpg);
+  background-size: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+
+}
+.grass::after{
+	content: "";
+  background: url(../imgs/grass.jpg);
+  background-size: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+
+}
+.brick::after{
+	content: "";
+  background-size: 100% 100%;
+  background: url(../imgs/brick.jpg);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+	
+}
+.leaf::after{      
+	content: "";
+  background: url(../imgs/leaff.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+	
+}
+
+.headerLink{
+  text-decoration: none;
+  color: whitesmoke;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcosite - site where you can calculate various things</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<ul class="headerUl">
+			<a href="#home" class="headerLink"><li class="headerList">HOME</li></a>
+			<span class="break">|</span>
+			<a href="#age" class="headerLink"><li class="headerList">THE AGE CALCULATOR</li></a>
+			<span class="break">|</span>
+			<a href="#supply" class="headerLink"><li class="headerList">THE SUPPLY CALCULATOR</li></a>
+			<span class="break">|</span>
+			<a href="#geo" class="headerLink"><li class="headerList">THE GEOMETRIZER</li></a>
+			<span class="break">|</span>
+			<a href="#temp" class="headerLink"><li class="headerList">THE TEMPERATURE CONVERTER</li></a>
+		</ul>
+	</header>
+	<main class="content">
+		<section class="section wood" id="home">
+			<h3 class="title">CALCOSITE</h3>
+			<h3 class="subTitle">SITE WHERE YOU CAN CALCULATE VARIOUS THINGS
+				<ul>
+					<li class="socialList"><a class="social" href="https://github.com/nowakoff"><i class="fa fa-github"></i></a></li>
+					<li class="socialList"><a class="social" href="https://www.linkedin.com/pub/aleksandra-nowak/a7/827/b1a"><i class="fa fa-linkedin-square"></i></a></li>
+					<li class="socialList"><a class="social" href="http://stackoverflow.com/users/4838943/aleksandra-nowak"><i class="fa fa-stack-overflow"></i></a></li>
+					<li class="socialList"><a class="social" href="https://www.youtube.com/channel/UCOQ6pxxKlPWbW5VP_ve-gag"><i class="fa fa-youtube"></i></a></li>
+					<li class="socialList"><a class="social" href="https://www.facebook.com/thespiritoftheplace/?fref=ts"><i class="fa fa-facebook"></i></a></li>
+					<li class="socialList"><a class="social" href="mailto:anowak@icstars.org"><i class="fa fa-envelope"></i></a></li>
+				</ul>	
+			</h3>
+		</section>
+		<section class="section green" id="age">
+			<article class="taskArea">
+				<h3>THE AGE CALCULATOR</h3>
+				<form class="taskForm">
+					<p class="row">
+						<label class="taskLabel">Birth Date:</label> 
+						<input  required type="number" class="taskInput" name="age" min="1900" id="ageInput" ><br>
+					</p>
+					<p class="row">
+						<input  required type="submit" class="submitButton" value="CALCULATE !" id="ageSubmit">
+					</p>
+				</form>
+				<div id="appendAge"></div>
+			</article>
+		</section>
+		<section class="section setImg grass" id="supply">
+			<article class="taskArea">
+				<h3>THE SUPPLY CALCULATOR</h3>
+				<form class="taskForm">
+					<p class="row">
+						<label class="taskLabel">Age: </label>
+						<input  required type="number" class="taskInput" name="age" id="ageSupplyInput"><br>
+					</p>
+					<p class="row">
+						<label class="taskLabel">Amount per day:  </label>
+						<input  required type="number" class="taskInput" name="supply" id="amountPerDay"><br>
+					</p>
+					<p class="row">
+					<input  required type="submit" class="submitButton" value="CALCULATE !" id="supplySubmit">
+					</p>
+				</form>
+				<div id="appendSupply"></div>
+			<!-- <text class="aboutText">Oh. You need a little dummy text for your mockup? How quaint.
+I bet you’re still using Bootstrap too…</text>
+			<img class="aboutImg" src="p.jpg"
+			> -->
+			</article>
+		</section>
+		<section class="section brick" id="geo">
+			<article class="taskArea">
+				<h3>THE GEOMETRIZER</h3>
+				<!-- <div id="advanced"></div> -->
+				<form class="taskForm">
+					<p class="row">
+						<label class="taskLabel">Radius:</label>
+						<input  required type="number" class="taskInput" name="age" id="radius"><br>
+					</p>
+					<p class="row">
+						<input  required type="submit" class="submitButton" value="CALCULATE !" id="geoSubmit">
+					</p>
+				</form>
+				<div id="appendGeo"></div>
+			</article>
+
+		</section>
+		<section class="section leaf" id="temp">
+			<article class="taskArea">
+				<h3>THE TEMPERATURE CONVERTER</h3>
+				<form class="taskForm">
+					<p class="row">
+						<label class="taskLabel">Temperature is in:</label>
+						
+						<select name="taskSelect" form="taskForm" id="temp" class="taskInput">
+						  <option value="C">Celsius</option>
+						  <option value="F">Fahrenheit</option>
+						</select>
+					</p>
+					<p class="row">
+						<label class="taskLabel">Temperature:</label> 
+						<input  required type="number" class="taskInput" name="age" id="temperature"><br>
+					</p>
+					<p class="row">
+						<input  required type="submit" class="submitButton" value="CALCULATE !" id="tempSubmit">
+					</p>
+				</form>
+				<div id="appendTemp"></div>
+			</article>
+		</section>
+		<!-- <section class="section">
+			<h3>CONTACT</h3>
+		</section> -->
+	</main>
+	<!-- <footer class="footer">
+		<h3>FOOTER</h3>
+
+
+
+	</footer> -->
+</body>
+</html>
